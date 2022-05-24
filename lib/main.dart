@@ -126,7 +126,7 @@ class _firstState extends State<first> {
                   onPressed: () {
                     openCheckout(l[index].id ?? 0);
                   },
-                  child: Text("buy now")));
+                  child: Text("buy plsssss now")));
         },
       ),
     );
