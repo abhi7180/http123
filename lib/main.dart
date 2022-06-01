@@ -92,6 +92,7 @@ class _firstState extends State<first> {
 
   void _handlePaymentSuccess(PaymentSuccessResponse response) {
     print('Success Response: $response');
+    print("payment id ===============>${response.paymentId}");
     /*Fluttertoast.showToast(
         msg: "SUCCESS: " + response.paymentId!,
         toastLength: Toast.LENGTH_SHORT); */
@@ -99,6 +100,7 @@ class _firstState extends State<first> {
 
   void _handlePaymentError(PaymentFailureResponse response) {
     print('Error Response: $response');
+    print(response.message);
     /* Fluttertoast.showToast(
         msg: "ERROR: " + response.code.toString() + " - " + response.message!,
         toastLength: Toast.LENGTH_SHORT); */
